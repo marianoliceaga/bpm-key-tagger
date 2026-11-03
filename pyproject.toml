@@ -1,0 +1,21 @@
+[project]
+name = "bpm-key-tagger"
+version = "0.1.0"
+description = "Detecta BPM y tonalidad de archivos WAV/MP3 y los graba como ID3 (TBPM / TKEY)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6-Essentials>=6.7",
+    "librosa>=0.10.2",
+    "mutagen>=1.47",
+    "numpy>=1.24",
+    "soundfile>=0.12",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+]
